@@ -1,6 +1,12 @@
 Coursera Getting and Cleaning Data Class Project
 ================================================
 
+The data used for this analysis is credited to the following source:
+
+[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
+The actual data used for analysis was downloaded from [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) on December 17, 2014.
+
 The attached [run_analysis.R](https://github.com/coursera10062014/gettingdataproject/blob/master/run_analysis.R)
 script will download, unpack, and clean up the data set for the class
 programming assignment.
@@ -25,7 +31,7 @@ Columns
 Activity: A factor indicating what the subject was doing during this
           set of measurements.  One of "LAYING", "SITTING",
           "STANDING", "WALKING", "WALKING_DOWNSTAIRS",
-          or "WALKING_UPSTAIRS"
+          or "WALKING_UPSTAIRS".  These are self explanatory.
           
 Subject: A numeric identifier in the range 1-30, identifying which human
    these measurements were taken from.
@@ -38,7 +44,9 @@ Metric is taken either in the time dimension, in which case it has a
 prefix of t, or it is taken in the frequency dimension in which case it
 has a prefix of f.  There were many factors coded in the original metric
 names, and I've left them mostly intact.  You can see Body and Gravity
-factors separated, then combined in a whole.
+factors separated, then combined in a whole.  For detailed explanations
+of the individual metrics, please see the README.txt file in
+[this zip archive](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
 
 The aggregate is either mean, or std.  The former indicates the cell
 contains the average of all measurements for that metric for the activity
