@@ -57,6 +57,9 @@ Lastly, X, Y, and Z axes are represented by those letters respectively.
 The original data does not specify their geometry origin, so neither
 do I.
 
-The units of these measurements vary and were not specified in the
-original data source.  Thus relative comparisons are possible, but that's
-about it.
+Units
+=====
+
+Acceleration units are in multiples of 'g', the surface gravity of the earth.
+Jerk is presumed to be the derivative of that, so g per second.  Gyro readings
+are in radians per second.  GyroJerk units are radians per second per second.
